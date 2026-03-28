@@ -42,7 +42,7 @@ FAQ_DATA = [
 ORDER_DATA = [
     {
         "entry_point": "top",
-        "name": "Заказчик1",
+        "name": "Первый",
         "surname": "Тестовый",
         "address": "Москва",
         "metro": "Черкизовская",
@@ -54,7 +54,7 @@ ORDER_DATA = [
     },
     {
         "entry_point": "bottom",
-        "name": "Заказчик2",
+        "name": "Второй",
         "surname": "Тестовый",
         "address": "Москва",
         "metro": "Бульвар Рокоссовского",
