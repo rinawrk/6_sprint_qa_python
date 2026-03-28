@@ -1,10 +1,10 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+# Базовый класс: общие методы работы с браузером и элементами страницы.
 
 class BasePage:
 
-    # Базовый класс: общие методы работы с браузером и элементами страницы.
     def __init__(self, driver, timeout=10):
         self.driver = driver
         self.wait = WebDriverWait(driver, timeout)
