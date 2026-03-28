@@ -12,8 +12,6 @@ __pycache__/
 
 # Allure
 allure_results/
-allure-results/
-allure-report/
 
 # Редакторы
 .vscode/
