@@ -1,9 +1,13 @@
+import allure
 from data import BASE_URL, DZEN_URL_PART
 from pages.main_page import MainPage
 
 # Тесты логотипов в шапке сайта.
 
 class TestLogo:
+
+    @allure.title("Переход на главную страницу по логотипу Самоката")
+    @allure.description("Проверка, что при клике на логотип Самоката открывается главная страница в той же вкладке")
 
     def test_scooter_logo_redirects_to_main_page(self, driver):
         # Создать объект главной страницы
@@ -21,6 +25,9 @@ class TestLogo:
 
         # Проверить, что открылась главная страница
         assert main_page.get_current_url() == BASE_URL
+
+    @allure.title("Открытие Дзена по логотипу Яндекса")
+    @allure.description("Проверка, что при клике на логотип Яндекса открывается новая вкладка со страницей Дзена")
 
     def test_yandex_logo_opens_dzen_in_new_tab(self, driver):
         # Создать объект главной страницы
