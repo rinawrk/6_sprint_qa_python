@@ -1,3 +1,4 @@
+import allure
 import pytest
 
 from data import ORDER_DATA
@@ -7,6 +8,9 @@ from pages.order_page import OrderPage
 # Тесты позитивного сценария оформления заказа.
 
 class TestOrder:
+
+    @allure.title("Успешное оформление заказа самоката")
+    @allure.description("Проверка полного позитивного сценария оформления заказа через верхнюю и нижнюю кнопки с разными наборами данных")
 
     @pytest.mark.parametrize("order_data", ORDER_DATA)
     def test_create_order_successfully(self, driver, order_data):
