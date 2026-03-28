@@ -1,3 +1,4 @@
+import allure
 import pytest
 
 from data import FAQ_DATA
@@ -7,6 +8,9 @@ from pages.main_page import MainPage
 
 class TestFAQ:
 
+    @allure.title("Проверка текста ответа в FAQ")
+    @allure.description("При клике на вопрос открывается соответствующий ответ")
+    
     @pytest.mark.parametrize("question_index, expected_answer", FAQ_DATA)
     def test_faq_answer_text(self, driver, question_index, expected_answer):
         # Создать объект главной страницы
