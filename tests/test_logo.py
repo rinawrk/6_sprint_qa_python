@@ -36,5 +36,8 @@ class TestLogo:
         # Переключиться на новую вкладку
         main_page.switch_to_new_tab()
 
+        # Дождаться финального URL после редиректов
+        main_page.wait_for_url_contains(DZEN_URL_PART)
+
         # Проверить, что открылась страница Дзена
         assert DZEN_URL_PART in main_page.get_current_url()

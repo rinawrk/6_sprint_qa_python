@@ -48,3 +48,7 @@ class BasePage:
     def switch_to_new_tab(self):
         self.wait.until(EC.number_of_windows_to_be(2))
         self.driver.switch_to.window(self.driver.window_handles[-1])
+
+    # Дождаться, пока в URL появится нужный текст
+    def wait_for_url_contains(self, text):
+        self.wait.until(EC.url_contains(text))
