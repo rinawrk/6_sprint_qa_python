@@ -2,8 +2,8 @@ from selenium.webdriver.common.by import By
 
 
 class MainPageLocators:
-
-    # Кнопка принятия куки внизу страницы
+    
+    # Кнопка принятия куки
     COOKIE_ACCEPT_BUTTON = (By.ID, "rcc-confirm-button")
 
     # Верхняя кнопка «Заказать» в шапке сайта
@@ -24,15 +24,8 @@ class MainPageLocators:
     # Логотип Самоката в шапке сайта
     SCOOTER_LOGO = (By.CSS_SELECTOR, 'a[class*="Header_LogoScooter"]')
 
-    @staticmethod
-    def faq_question_by_index(index: int):
+    # Шаблон id вопроса в FAQ по индексу
+    FAQ_QUESTION_ID_TEMPLATE = "accordion__heading-{}"
 
-        # Локатор вопроса в FAQ по его индексу
-        return By.ID, f"accordion__heading-{index}"
-
-    @staticmethod
-    def faq_answer_by_index(index: int):
-
-        # Локатор текста ответа в FAQ по индексу вопроса
-        return By.XPATH, f"//div[@id='accordion__panel-{index}']/p"
-    
+    # Шаблон xpath ответа в FAQ по индексу
+    FAQ_ANSWER_XPATH_TEMPLATE = "//div[@id='accordion__panel-{}']/p"
