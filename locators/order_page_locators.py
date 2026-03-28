@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 
 
 class OrderPageLocators:
+    
     # --- Первый шаг заказа: «Для кого самокат» ---
 
     # Поле ввода имени
