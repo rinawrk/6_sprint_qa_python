@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-from data import BASE_URL
+from config import BASE_URL
 from locators.main_page_locators import MainPageLocators
 from pages.base_page import BasePage
 

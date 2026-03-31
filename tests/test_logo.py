@@ -1,5 +1,5 @@
 import allure
-from data import BASE_URL, DZEN_URL_PART
+from config import BASE_URL, DZEN_URL_PART
 from pages.main_page import MainPage
 
 # Тесты логотипов в шапке сайта.
