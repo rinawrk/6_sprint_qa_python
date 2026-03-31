@@ -33,30 +33,28 @@ FAQ_DATA = [
     ),
 ]
 
-
-ORDER_DATA = [
-    {
-        "entry_point": "top",
+# Первый набор данных для оформления заказа через верхнюю кнопку
+ORDER_DATA_TOP = {
         "name": "Первый",
         "surname": "Тестовый",
         "address": "Москва",
         "metro": "Черкизовская",
         "phone": "89990001111",
-        "delivery_date": "31.03.2026",
+        "delivery_date": "02.04.2026",
         "rent_period": "сутки",
         "color": "black",
         "comment": "Тест"
-    },
-    {
-        "entry_point": "bottom",
+    }
+
+# Второй набор данных для оформления заказа через нижнюю кнопку
+ORDER_DATA_BOTTOM = {
         "name": "Второй",
         "surname": "Тестовый",
         "address": "Москва",
         "metro": "Бульвар Рокоссовского",
         "phone": "89990002222",
-        "delivery_date": "01.04.2026",
+        "delivery_date": "03.04.2026",
         "rent_period": "двое суток",
         "color": "grey",
         "comment": "Тест"
     }
-]
